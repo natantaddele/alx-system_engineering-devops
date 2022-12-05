@@ -1,1 +1,2 @@
-Hellow, World
+#!/bin/bash
+echo "Hellow, World"
