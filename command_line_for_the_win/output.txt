@@ -1,0 +1,13 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 300F-AC41
+
+ Directory of C:\alx-system_engineering-devops\command_line_for_the_win
+
+04/22/2023  10:08 PM    <DIR>          .
+04/22/2023  10:08 PM    <DIR>          ..
+04/22/2023  09:42 PM             9,085 mkdir_my_folder.png
+04/22/2023  10:03 PM    <DIR>          my_directory
+04/22/2023  10:08 PM                 0 output.txt
+04/22/2023  09:31 PM               812 README.md
+               3 File(s)          9,897 bytes
+               3 Dir(s)  374,622,167,040 bytes free
