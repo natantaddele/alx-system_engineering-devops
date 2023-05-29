@@ -1,0 +1,21 @@
+Explanation of the components:
+
+Server 1 and Server 2: Two servers are added to provide redundancy and handle increased traffic. If one server fails, the other can still serve the website.
+Load Balancer (HAproxy): Distributes incoming requests among the web servers or application servers using a round-robin algorithm. This ensures that the workload is evenly distributed across the servers.
+Web Server (Nginx): Receives incoming HTTP requests and serves web pages.
+Application Server: Executes the website's application code and generates dynamic content.
+Application Files: Contains the codebase of the website's application logic and components.
+Database (MySQL): Stores and manages the website's data.
+DNS Record: The DNS record for the domain name "www.foobar.com" points to the load balancer's IP address, ensuring that requests are directed to the appropriate server.
+Additional explanations:
+
+Load Balancer: It is added to distribute incoming traffic across multiple servers, improving performance, and ensuring high availability.
+Distribution Algorithm: The load balancer is configured with a round-robin algorithm, which cycles through the available servers, distributing requests equally.
+Active-Active vs. Active-Passive Setup: The infrastructure is configured in an active-active setup, where both servers are actively handling incoming requests. In an active-passive setup, one server remains passive as a backup and only becomes active if the primary server fails.
+Primary-Replica (Master-Slave) Database Cluster: The database is set up as a primary-replica cluster. The primary node handles write operations, while the replica node replicates the primary's data and handles read operations.
+Difference between Primary and Replica Nodes: The primary node is responsible for handling write operations, ensuring data consistency and integrity. The replica node replicates the primary's data and primarily handles read operations, providing scalability and data redundancy.
+Issues with this infrastructure:
+
+Single Point of Failure (SPOF): The load balancer can be a potential SPOF. If it fails, traffic distribution and website availability can be affected. Consider implementing redundant load balancers for improved resilience.
+Security Issues: The infrastructure lacks a firewall and HTTPS, which can expose it to potential security threats. Implementing a firewall and enabling HTTPS encryption is crucial for safeguarding the infrastructure and user data.
+No Monitoring: The absence of monitoring tools makes it challenging to track the performance, availability, and health of the servers and services. Implementing monitoring solutions can help detect issues and ensure timely responses for maintenance and troubleshooting.
