@@ -1,0 +1,32 @@
+What Happens When You Type https://www.google.com and Press Enter?
+
+Introduction:
+Have you ever wondered about the behind-the-scenes processes that occur when you type "https://www.google.com" into your browser and hit Enter? The seemingly simple action triggers a series of complex steps involving various components and protocols. In this blog post, we'll take a closer look at the journey your request takes, from the initial DNS request to the final retrieval of data from the database.
+
+1. DNS Request:
+The journey begins with a Domain Name System (DNS) request. Your browser sends a query to a DNS resolver, such as your internet service provider's DNS server or a public DNS resolver. The resolver then translates the human-readable domain name "www.google.com" into an IP address, which is necessary for establishing a connection.
+
+2. TCP/IP:
+Once the DNS resolver returns the IP address of the server hosting Google's website, a Transmission Control Protocol (TCP) connection is established. TCP breaks the data into packets and ensures reliable transmission between your computer and the server.
+
+3. Firewall:
+Before your request reaches the server, it often encounters a firewall. Firewalls act as security barriers, monitoring and filtering incoming and outgoing network traffic based on predefined rules. They protect the server from unauthorized access and potential security threats.
+
+4. HTTPS/SSL:
+Now, the connection moves to the HTTPS layer, which ensures secure communication between your browser and the server. HTTPS (HyperText Transfer Protocol Secure) encrypts the data exchanged using SSL (Secure Sockets Layer) or its successor, TLS (Transport Layer Security). This encryption prevents eavesdropping and protects your sensitive information.
+
+5. Load-Balancer:
+Large-scale websites like Google employ load-balancers to distribute incoming requests across multiple servers. Load-balancers optimize resource utilization and improve performance by directing traffic to the most available and least congested servers. They play a crucial role in maintaining website responsiveness and handling high traffic loads.
+
+6. Web Server:
+Once the load-balancer routes your request to a specific server, a web server, such as Apache or Nginx, handles it. The web server receives the request, processes it, and retrieves the appropriate files, such as HTML, CSS, and JavaScript, to generate the webpage.
+
+7. Application Server:
+In some cases, the web server communicates with an application server to generate dynamic content. Application servers execute server-side scripts or applications, such as PHP, Python, or Java, to process user inputs, interact with databases, and generate customized responses. This step allows websites to provide personalized and interactive features.
+
+8. Database:
+To fetch specific data required to generate the webpage, the application server interacts with a database. Databases store and organize vast amounts of structured information. In Google's case, their database servers handle queries related to search results, user preferences, and other functionalities.
+
+Conclusion:
+From the DNS request to the retrieval of data from the database, typing "https://www.google.com" and pressing Enter initiates a remarkable journey through various components and protocols. Understanding these steps provides insight into the intricate processes that make websites accessible to us, delivering the content we desire in a secure and efficient manner.
+
